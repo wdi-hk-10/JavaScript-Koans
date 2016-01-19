@@ -7,8 +7,9 @@ test("addition", function() {
   for (var i = 0; i <= 5; i++) {
     result = result + i;
   }
-  equal(__, result, "What is the value of result?");
+  equal(15, result, "What is the value of result?");
 });
+  // shouldn't this be 5?
 
 test("assignment addition", function() {
   var result = 0;
@@ -16,15 +17,16 @@ test("assignment addition", function() {
     //the code below is just like saying result = result + i; but is more concise
     result += i;
   }
-  equal(__, result, "What is the value of result?");
+  equal(15, result, "What is the value of result?");
 });
+  // shouldn't this be 5?
 
 test("subtraction", function() {
   var result = 5;
   for (var i = 0; i <= 2; i++) {
     result = result - i;
   }
-  equal(__, result, "What is the value of result?");
+  equal(2, result, "What is the value of result?");
 });
 
 test("assignment subtraction", function() {
@@ -32,7 +34,7 @@ test("assignment subtraction", function() {
   for (var i = 0; i <= 2; i++) {
     result -= i;
   }
-  equal(__, result, "What is the value of result?");
+  equal(2, result, "What is the value of result?");
 });
 
 //Assignment operators are available for multiplication and division as well
@@ -43,5 +45,5 @@ test("modulus", function() {
   var x = 5;
   //again this is exactly the same as result = result % x
   result %= x;
-  equal(__, result, "What is the value of result?");
+  equal(0, result, "What is the value of result?");
 });
